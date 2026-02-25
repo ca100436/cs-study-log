@@ -1,29 +1,21 @@
-# CS Study Log
+# 📘 자료구조
 
-This repository documents my journey as a CS junior.
+## 📌 자료구조란?
 
-## Current Focus
-- Python fundamentals
-- Data Structures
-- Building strong problem-solving skills
+자료구조는 데이터를 효율적으로 저장하고 관리하기 위한 구조와 그 처리 방법을 다루는 학문이다.
+같은 데이터라도 어떤 구조를 선택하느냐에 따라 실행 속도와 메모리 사용량이 크게 달라진다.
+효율적인 알고리즘 설계를 위해 반드시 이해해야 하는 핵심 과목이다.
 
----
-Consistent progress > Perfection.
+## 📌 이 과목의 목적
 
+단순히 자료구조의 형태를 외우는 것이 아니라,
+각 구조의 동작 원리와 시간복잡도를 이해하고
+상황에 맞는 최적의 구조를 선택할 수 있는 사고력을 기르는 것이 목표다.
 
-# Data Structures (Python)
+## 🎯 이번 학기 목표
 
-- Purpose : implement core data structures in Python
-- Focus : logic + time complexity + clean code
-
-
-# Python Basics
-
-- Purpose : review Python fundamentals needed for CS classes
-- Topics : functions, classes, exceptions, file I/O
-
-
-# Weekly Log
-
-- Purpose : summarize what I learned each week
-- Format : weekN.md (goals, progress, next steps)
+- 시간복잡도(O-표기법) 완전 이해
+- 배열, 연결리스트, 스택, 큐 구현해보기
+- 트리와 그래프 구조 개념 정리
+- 주요 알고리즘 흐름 손으로 설명할 수 있을 정도로 이해하기
+- GitHub에 직접 구현 코드 기록하기

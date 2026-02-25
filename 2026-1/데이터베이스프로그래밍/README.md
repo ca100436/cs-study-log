@@ -1,29 +1,21 @@
-# CS Study Log
+# 📘 데이터베이스프로그래밍
 
-This repository documents my journey as a CS junior.
+## 📌 데이터베이스란?
 
-## Current Focus
-- Python fundamentals
-- Data Structures
-- Building strong problem-solving skills
+데이터베이스는 데이터를 체계적으로 저장하고 관리하기 위한 시스템이다.
+대량의 데이터를 효율적으로 검색, 수정, 삭제하기 위해 구조화된 형태로 관리된다.
+관계형 데이터베이스는 테이블 구조를 기반으로 하며, SQL을 통해 데이터를 조작한다.
 
----
-Consistent progress > Perfection.
+## 📌 이 과목의 목적
 
+데이터를 단순히 저장하는 것을 넘어,
+데이터 모델링과 관계 설정을 이해하고
+정확하고 효율적인 SQL 쿼리를 작성하는 능력을 기르는 것이 목표다.
 
-# Data Structures (Python)
+## 🎯 이번 학기 목표
 
-- Purpose : implement core data structures in Python
-- Focus : logic + time complexity + clean code
-
-
-# Python Basics
-
-- Purpose : review Python fundamentals needed for CS classes
-- Topics : functions, classes, exceptions, file I/O
-
-
-# Weekly Log
-
-- Purpose : summarize what I learned each week
-- Format : weekN.md (goals, progress, next steps)
+- 기본 SQL 문법 완전 이해 (SELECT, INSERT, UPDATE, DELETE)
+- JOIN 개념과 동작 원리 이해
+- 정규화 개념 정리
+- 트랜잭션과 무결성 개념 이해
+- 실습 쿼리를 GitHub에 체계적으로 기록하기

@@ -1,29 +1,22 @@
-# CS Study Log
+# 📘 반응형웹프로그래밍
 
-This repository documents my journey as a CS junior.
+## 📌 반응형 웹이란?
 
-## Current Focus
-- Python fundamentals
-- Data Structures
-- Building strong problem-solving skills
+반응형 웹은 다양한 디바이스(PC, 태블릿, 모바일)의 화면 크기에 따라
+레이아웃과 요소가 유연하게 변화하도록 설계하는 웹 개발 방식이다.
+CSS 미디어 쿼리와 유연한 레이아웃 설계를 통해
+하나의 코드로 다양한 환경에서 최적의 사용자 경험을 제공한다.
 
----
-Consistent progress > Perfection.
+## 📌 이 과목의 목적
 
+HTML, CSS, JavaScript를 기반으로
+웹 페이지의 구조와 스타일, 동작을 이해하고,
+반응형 설계를 통해 사용자 중심의 인터페이스를 구현하는 능력을 기르는 것이 목표다.
 
-# Data Structures (Python)
+## 🎯 이번 학기 목표
 
-- Purpose : implement core data structures in Python
-- Focus : logic + time complexity + clean code
-
-
-# Python Basics
-
-- Purpose : review Python fundamentals needed for CS classes
-- Topics : functions, classes, exceptions, file I/O
-
-
-# Weekly Log
-
-- Purpose : summarize what I learned each week
-- Format : weekN.md (goals, progress, next steps)
+- HTML 구조 설계 능력 향상
+- CSS 레이아웃(Flexbox, Grid) 이해
+- 미디어 쿼리 활용한 반응형 구현
+- 간단한 인터랙션 구현(JavaScript 기초)
+- 결과물을 GitHub에 정리하여 포트폴리오화

@@ -1,29 +1,21 @@
-# CS Study Log
+# 📘 소프트웨어공학
 
-This repository documents my journey as a CS junior.
+## 📌 소프트웨어공학이란?
 
-## Current Focus
-- Python fundamentals
-- Data Structures
-- Building strong problem-solving skills
+소프트웨어공학은 소프트웨어를 체계적으로 설계, 개발, 테스트, 유지보수하기 위한
+방법론과 프로세스를 다루는 학문이다.
+대규모 시스템을 안정적으로 개발하기 위해 협업, 품질 관리, 일정 관리가 중요하다.
 
----
-Consistent progress > Perfection.
+## 📌 이 과목의 목적
 
+개발을 단순한 코딩 작업이 아닌,
+요구사항 분석 → 설계 → 구현 → 테스트 → 유지보수의
+전 과정을 이해하는 능력을 기르는 것이 목표다.
 
-# Data Structures (Python)
+## 🎯 이번 학기 목표
 
-- Purpose : implement core data structures in Python
-- Focus : logic + time complexity + clean code
-
-
-# Python Basics
-
-- Purpose : review Python fundamentals needed for CS classes
-- Topics : functions, classes, exceptions, file I/O
-
-
-# Weekly Log
-
-- Purpose : summarize what I learned each week
-- Format : weekN.md (goals, progress, next steps)
+- 소프트웨어 개발 생명주기(SDLC) 이해
+- 요구사항 분석과 UML 다이어그램 작성 연습
+- 테스트 개념과 품질 관리 이해
+- 팀 프로젝트에서 역할 분담과 협업 경험 쌓기
+- 이론을 실제 프로젝트에 연결해보기

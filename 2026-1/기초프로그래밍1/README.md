@@ -1,29 +1,19 @@
-# CS Study Log
+# 📘 기초프로그래밍1
 
-This repository documents my journey as a CS junior.
+## 📌 Python이란?
 
-## Current Focus
-- Python fundamentals
-- Data Structures
-- Building strong problem-solving skills
+Python은 간결하고 읽기 쉬운 문법을 가진 고수준 인터프리터 언어이다.
+코드를 직관적으로 작성할 수 있어 프로그래밍 사고를 훈련하기에 적합하다.
+웹 개발, 데이터 분석, 인공지능 등 다양한 분야에서 활용된다.
 
----
-Consistent progress > Perfection.
+## 📌 이 과목의 목적
 
+이 과목은 Python 문법을 배우는 것을 넘어,
+문제를 논리적으로 분석하고 이를 코드로 정확히 표현하는 능력을 기르는 것을 목표로 한다.
 
-# Data Structures (Python)
+## 🎯 이번 학기 목표
 
-- Purpose : implement core data structures in Python
-- Focus : logic + time complexity + clean code
-
-
-# Python Basics
-
-- Purpose : review Python fundamentals needed for CS classes
-- Topics : functions, classes, exceptions, file I/O
-
-
-# Weekly Log
-
-- Purpose : summarize what I learned each week
-- Format : weekN.md (goals, progress, next steps)
+- 기본 문법 완전 이해 (변수, 조건문, 반복문, 함수)
+- 자료형과 자료구조 개념 정확히 정리
+- 직접 코드를 작성하며 문제 해결 능력 기르기
+- 매주 GitHub에 학습 내용 기록하기

@@ -1,29 +1,22 @@
-# CS Study Log
+# 📘 사물인터넷프로그래밍
 
-This repository documents my journey as a CS junior.
+## 📌 사물인터넷(IoT)이란?
 
-## Current Focus
-- Python fundamentals
-- Data Structures
-- Building strong problem-solving skills
+사물인터넷(IoT, Internet of Things)은
+센서와 네트워크를 통해 물리적 객체를 인터넷에 연결하여
+데이터를 수집하고 제어하는 기술이다.
+하드웨어와 소프트웨어가 결합되어 실제 환경과 상호작용한다.
 
----
-Consistent progress > Perfection.
+## 📌 이 과목의 목적
 
+센서, 네트워크, 마이크로컨트롤러 등을 활용하여
+데이터를 수집하고 처리하는 과정을 이해하고,
+이를 소프트웨어와 연결하는 능력을 기르는 것이 목표다.
 
-# Data Structures (Python)
+## 🎯 이번 학기 목표
 
-- Purpose : implement core data structures in Python
-- Focus : logic + time complexity + clean code
-
-
-# Python Basics
-
-- Purpose : review Python fundamentals needed for CS classes
-- Topics : functions, classes, exceptions, file I/O
-
-
-# Weekly Log
-
-- Purpose : summarize what I learned each week
-- Format : weekN.md (goals, progress, next steps)
+- IoT 기본 구조 이해 (센서 → 데이터 → 서버)
+- 마이크로컨트롤러 동작 원리 이해
+- 간단한 센서 데이터 수집 및 처리 실습
+- 네트워크 통신 개념 이해
+- 실습 결과를 GitHub에 체계적으로 기록하기
