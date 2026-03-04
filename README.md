@@ -8,6 +8,7 @@ This repository documents my journey as a CS junior.
 - Building strong problem-solving skills
 
 ---
+
 Consistent progress > Perfection.
 
 
@@ -27,3 +28,14 @@ Consistent progress > Perfection.
 
 - Purpose : summarize what I learned each week
 - Format : weekN.md (goals, progress, next steps)
+
+---
+
+## 🔗 Links & Evidence
+
+- 🐙 GitHub Profile: https://github.com/ca100436  
+- 📁 CS Study Log: https://github.com/ca100436/cs-study-log  
+- 📄 Certificates & Scores: (PDF 링크)  
+- 🚀 Projects Detail: (프로젝트 상세 페이지 링크)
+
+---
