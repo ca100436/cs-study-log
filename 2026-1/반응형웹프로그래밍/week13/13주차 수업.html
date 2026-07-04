@@ -1,0 +1,285 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>13주차 수업</title>
+    </head>
+    <body>
+        <p>첫번째 p 요소</p>
+        <p>두번째 p 요소</p>
+        <p id="special"></p>
+        <script>
+            let eleArray = document.getElementsByTagName("p");
+            document.getElementById("special").innerHTML = 'eleArray[0]: ' + eleArray[0].innerHTML;
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>13주차 수업</title>
+    </head>
+    <body>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+        </ul>
+        <script>
+            let list = document.getElementsByTagName('ul')[0];
+            let allItems = list.getElementByTagName('li');
+
+            for (let i = 0, length = allItems.length; i < length; i++) {
+                alert(allItems[i].innerHTML);
+            }
+
+        </script>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            function process() {
+                let obj = document.getElementById("target");
+                alert(obj.value);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <input type="text" id="target" name="text1">
+            <input type="submit" value="제출" onclick="process()">
+        </form>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function getValue() {
+            let list = document.getElementsByName('color');
+            for (let i = 0; i < list.length; i++) {
+                if (list[i].checked) {
+                    document.getElementById("result").value = list[i].value;
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="radio" name="color" CHECKED value="red">RED<br>
+    <input type="radio" name="color" value="blue">BLUE<br>
+    <input type="radio" name="color" value="green">GREEN<br>
+    <input type="button" value="getValue();" value="클릭">
+    <input type="text" id="result" value="">
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function calc() {
+            let result;
+            let radius = document.getElementById('radius').value;
+            let list = document.getElementsByName('shape');
+            if (list[0].checked)
+                result = Math.PI * Math.pow(radius, 2);
+            else
+                result = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+            document.getElementById('result').value = result;
+        }
+    </script>
+</head>
+<body>
+    반지름 <input type="text" name="radius" id="radius">
+    <input type="radio" name="shape" value="area">AREA
+    <input type="radio" name="shape" value="volume">VOLUME<br>
+    연산결과 <input type="text" name="volume" id="result">
+    <button onclick="calc()">계산</button>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>13주차 수업</title>
+</head>
+<body>
+    <img id="image" src="SET_C.png" width="120" height="100">
+    <script>
+        function changeImage() {
+
+            document.getElementById("image").src = "SET_B.png";
+        }
+    </script>
+    <input type="button" onclick="changeImage()" value="눌러보세요" />
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let mode = "white";
+        function sub() {
+            if (mode == "white") {
+                document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+                document.getElementsByTagName("body")[0].style.color = "white";
+                mode = "black";
+            } else {
+                document.getElementsByTagName("body")[0].style.backgroundColor = "white";
+                document.getElementsByTagName("body")[0].style.color = "black";
+                mode = "white";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>다크 모드와 라이트 모드</h2>
+    <p>버튼을 누르면 다크 모드와 라이트 모드가 토글됩니다.</p>
+    <button onclick="sub()">다크모드 토글</button>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .button {
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        function add() {
+            let number1, number2;
+            number1 = parseFloat(document.getElementById("number1").value);
+            number2 = parseFloat(document.getElementById("number2").value);
+            document.getElementById("result").value = number1 + number2;
+        }
+    </script>
+</head>
+<body>
+    숫자 1: <input type=text id="number1" value="9"><br>
+    숫자 2: <input type=text id="number2" value="6"><br>
+    <input type=button value="+" onclick="add()" class="button">
+    <input type=button value="-"  class="button">
+    <input type=button value="*"  class="button">
+    <input type=button value="/"  class="button"><br>
+    연산결과: <input type=text id="result" value="">
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function addNode(t) {
+            let node = document.createElement("p");
+            node.innerHTML=t;
+            document.getElementById("target").appendChild(node);
+        }
+    </script>
+</head>
+<body>
+    <div id="target" onclick="addNode('동적으로 텍스트가 추가됩니다.')" style="font: 20px italic;">여기를 클릭하세요.</div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, td { border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <table id="special">
+        <tr>            <td>(1, 1) 셸</td>            <td>(1, 2) 셸</td>           </tr>
+        <tr>            <td>(2, 1) 셸</td>            <td>(2, 2) 셸</td>           </tr>
+    </table>
+    <br>
+    <button onclick="insert()">행 추가</button>
+    <script>
+        function insert() {
+            let table = document.getElementById("special");
+            let row = table.insertRow(0);
+            let cell1 = row.inserCell(0);
+            let cell2 = row.insertCell(1);
+            cell1.innerHTML = "새로운 셸 (1, 1)";
+            cell2.innerHTML = "새로운 셸 (1, 2)";
+        }
+    </script>
+</body>
+</html> -->

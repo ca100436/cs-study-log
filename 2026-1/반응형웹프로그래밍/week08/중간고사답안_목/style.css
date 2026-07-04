@@ -1,0 +1,364 @@
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "맑은 고딕", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f5f2;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+    background-color: #6f4e37;
+    color: white;
+    padding: 20px 0;
+}
+
+/*.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}*/
+
+.logo {
+    font-size: 28px;
+}
+
+/*.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}*/
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+a:hover, a.active {
+    text-decoration: underline;
+}
+
+/* 메인 hero */
+.hero {
+    background-color: #d9c2a7;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* 버튼 */
+.btn {
+    display: inline-block;
+    background-color: #6f4e37;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #5a3f2d;
+}
+
+.btn-light {
+    background-color: white;
+    color: #6f4e37;
+    border: 1px solid #6f4e37;
+}
+
+.btn-light:hover {
+    background-color: #f0e6dc;
+}
+
+/* 특징 영역 */
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+    color: #6f4e37;
+}
+
+/* 공통 페이지 제목 */
+.page-section {
+    padding: 50px 0;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title h2 {
+    font-size: 32px;
+    color: #6f4e37;
+    margin-bottom: 10px;
+}
+
+/* 카드 레이아웃 */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image {
+    height: 180px;
+    background-color: #e7ded5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #6f4e37;
+}
+
+.card img {
+    width : 100%;
+    height: 180px;
+    margin-bottom : 10px;
+    border-radius:10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #6f4e37;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+/* About 페이지 */
+.about-layout {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    height: 300px;
+    background-color: #e7ded5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #6f4e37;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h3 {
+    margin-bottom: 15px;
+    color: #6f4e37;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    padding-left: 20px;
+}
+
+/* 표 */
+.info-table-section h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6f4e37;
+    text-align: center;
+}
+
+.info-table {
+    width: 90%;
+    margin : 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.info-table th,
+.info-table td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #f1e5d8;
+    width: 25%;
+}
+
+/* 폼 */
+.form-section {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6f4e37;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group {
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chk{
+   margin-right:15px;
+}
+
+fieldset {
+   margin-top:0;
+   margin-bottom:20px;
+   border-radius:5px;
+}
+
+
+
+/* 푸터 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .about-layout {
+        flex-direction: column;
+    }
+}
+
+.complex-table {
+    margin-top: 20px;
+}
+
+.complex-table th {
+    background-color: #d9c2a7;
+    text-align: center;
+}
+
+.complex-table td {
+    text-align: center;
+    vertical-align: middle;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE COM - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+         <a href="index.html"><h1 class="logo">CAFE COM</h1></a>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <section class="page-title">
+            <h2>RESERVATION</h2>
+            <p>예약 사항을 남겨주세요.</p>
+        </section>
+
+        <section class="form-section">
+            <form>
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" selected>
+                </div>
+
+    <div class="form-group">
+        <label for="phone">연락처</label>
+        <input type="text" id="phone">
+    </div>
+
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="type">문의 종류</label>
+                    <select id="type" name="type">
+                        <option>예약</option>
+                        <option>메뉴</option>
+                        <option>매장 문의</option>
+                        <option>기타</option>
+                    </select>
+                </div>
+
+    <div class="form-group">
+    <label>관심 메뉴</label>
+</div>
+    <fieldset>
+
+    <div class="checkbox-group">
+ 
+        <label class="chk" for="coffee"> 커피 
+        <input type="checkbox" class="chk" id="coffee"> </label>
+
+        <label class="chk" for="drink"> 에이드 
+        <input type="checkbox" class="chk" id="drink"> </label>
+
+        <label class="chk"  for="tea"> 티
+         <input type="checkbox" class="chk" id="tea"></label> 
+
+        <label class="chk" for="desert"> 디저트 
+        <input type="checkbox" class="chk" id="desert"> </label>
+
+    
+        <label class="chk" for="brunch"> 브런치 
+            <input type="checkbox" class="chk" id="brunch"></label> 
+
+        <label class="chk" for="season"> 시즌 메뉴 
+            <input type="checkbox" class="chk" id="season"></label>      
+
+    </div>
+   </fieldset>
+                <div class="form-group">
+                    <label for="message">요청 사항</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn">제출하기</button>
+                    <button type="reset" class="btn btn-light">다시쓰기</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>강원도 원주시 우산동 12 | 전화 033-123-4567</p>
+            <p>&copy; 2026 CAFE COM. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

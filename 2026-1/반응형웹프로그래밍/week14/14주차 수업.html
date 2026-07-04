@@ -1,0 +1,268 @@
+<!-- <html>
+<head>
+    <title>주사위 굴리기</title>
+    <style>
+        * {
+            font-family: '굴림', sans-serif;
+            text-align: center;
+        }
+        #dice {
+            height:100px;
+            width:100px;
+            margin: 10px auto;
+            background-color: yellow;
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 100px;
+        }
+    </style>
+    <script>
+        function roll() {
+            let ressult = Math.floor(Math.random() * 6) + 1;
+            let dice = document.getElementById("dice");
+            dice.innerHTML = ressult;
+        };
+    </script>
+</head>
+<body>
+    <h3>주사위 굴리기 게임입니다.</h3>
+    <p id="dice"></p>
+    <button onclick="roll()">주사위 굴리기</button>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        * { text-align: center; }
+        #board {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #board tr td {
+            border: 1px solid white;
+            background: #34da79;
+            width: 16px;
+            height: 16px;
+            text-align: center;
+        }
+        #board tr td.clicked { background: #6c5ee7; }
+        #board tr td.mine { background: #FF0000; }
+    </style>
+</head>
+<body>
+    <h1>지뢰찾기</h1>
+    <table id=board>
+    </table>
+    <button onclick="genGrid();">새로운 게임</button>
+    <script>
+        let grid = document.getElementById("board");
+        genGrid();
+        function genGrid() {
+            grid.innerHTML = "";
+            for (let i = 0; i < 8; i++) {
+                row = grid.insertRow(i);
+                for (var j = 0; j < 8; j++) {
+                    cell = row.insertCell(j);
+                    cell.onclick = function () { clickBox(this); };
+                    var mine = document.createAttribute("mine");
+                    if (Math.random() < 0.3)
+                        mine.value = "true";
+                    else
+                        mine.value = "false";
+                }
+                cell.setAqtributeNode(mine);
+            }
+            function clickBox(cell) {
+                if (cell.getAttribute("mine") == "true") {
+                    cell.className = "mine";
+                    alert("게임이 종료되었습니다.");
+                } else {
+                    cell.className = "clicked";
+                }
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <html>
+<body>
+    <div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"
+       style="background-color: #faea11; width: 200px; height: 50px;">
+       마우스를 올려주세요!</div>
+    <script>
+        function mouseOver(obj) {
+            obj.innerHTML = "감사합니다."
+        }
+        function mouseOut(obj) {
+            obj.innerHTML = "마우스를 올려주세요!"
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        p, div {
+            margin: 10px;
+            border: 1px solid rgb(100, 89, 25);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">DIV
+        <p id="p1">P</p>
+    </div>
+    <script>
+        let elem1=document.getElementById("div1");
+        elem1.addEventListener("click", function() {alert('캡처링 div');}, true);
+        elem1.addEventListener("click", function() {alert('버블링 div');});
+        elem2=document.getElementById("p1");
+        elem2.addEventListener("click", function() {alert('캡처링 p');}, true);
+        elem2.addEventListener("click", function() {alert('버블링 p');});
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function changeColor(c) {
+            document.getElementById("target").style.backgroundColor = c;
+        }
+    </script>
+</head>
+<body id="target">
+    <form method="POST">
+        <input type="radio" name="C1" value="v1"
+            onclick="changeColor('lightblue')">파랑색
+        <input type="radio" name="C1" value="v2"
+            onclick="changeColor('lightgreen')">녹색
+    </form>
+</body>
+</html> -->
+
+
+<!-- <html>
+<head>
+    <script>
+        function cal() {
+            let answer = document.getElementById('answer').value;
+            let s = document.getElementById('problem').value;
+            let solution = eval(s);
+            if (answer == solution) {
+                alert("정답!");
+            } else {
+                alert("틀렸습니다! 정답은"+solution);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Math Quiz</h1>
+    <input type="text" id="problem" value="12*2+20-30"><br>
+    <input type="text" id="answer">
+    <button onclick="cal()">정답 알아보기</button>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #div1 {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">이 텍스트 위에서 마우스 휠을 움직이면 폰트가 증가하거나 감소합니다.</div>
+    <script>
+        document.getElementById("div1").addEventListener("wheel", sub);
+        let size = 30;
+        function sub(e) {
+            if (e.wheelDelta > 0)
+                size++;
+            else
+                size--;
+            this.style.fontSize = size + "px";
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            width: 100px; height: 100px; border: 1px solid black;
+            margin: 10px; float: left;
+            padding: 30px; text-align: center;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseenter="enter1(this)"onmouseleave="leave(this)"></div>
+    <div onmouseenter="enter2(this)"onmouseleave="leave(this)"></div>
+    <div onmouseenter="enter3(this)"onmouseleave="leave(this)"></div>
+    <script>
+        let x = 0; let y = 0; let z = 0;
+        function enter1(obj) {
+            x++;
+            obj.innerHTML = "mouseenter:" + x;
+            obj.style.background = "yellow";
+        }
+        function enter2(obj) {
+            y++;
+            obj.innerHTML = "mousecenter:" + y;
+            obj.style.background = "yellow";
+        }
+        function enter3(obj) {
+            z++;
+            obj.innerHTML = "mouseenter:" + z;
+            obj.style.background = "yellow";
+        }
+        function leave(obj) {
+            obj.style.background = "lightgreen";
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #img1 {
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <img src="[브런치+디저트] drawing SET A.png" onmousemove="sub(event)"><br>
+    <p id=" test"></p>
+    <script>
+        function sub(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "좌표: (" + x + "," + y + ")";
+            document.getElementById("test").innerHTML = coor;
+        }
+        </script>
+</body>
+</html> -->

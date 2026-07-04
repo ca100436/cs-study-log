@@ -1,0 +1,903 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p>
+        <span class="a">INLINE</span>
+        <span class="a">INLINE</span>
+    </p>
+    <p>
+        <span class="b">INLINE_B:LOCK</span>
+        <span class="b">INLINE_B:LOCK</span>
+    </p>
+    <p>
+        <span class="c">BLOCK</span>
+        <span class="c">BLOCK</span>
+    </p>
+</body>
+    <style>
+        span.a {
+            display: inline;
+            width: 100px;
+            height: 60px;
+            padding: 5px;
+            border: 1px solid rgb(136, 250, 152);
+            background-color: rgb(123, 214, 146);
+        }
+        span.b {
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: rgb(132, 109, 196);
+        }
+        span.c {
+            display: block;
+            width: 100px;
+            height: 60px;
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: rgb(224, 166, 176);
+        }
+    </style>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="two">
+        block #2<br/>
+        position: static<br/>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: static;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="two">
+        block #2<br/>
+        position: static<br/>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="two">
+        block #2<br/>
+        position: static;<br/>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head> -->
+<!-- </html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="two">
+        block #2<br/>
+        position: relative;<br/>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="two">
+        block #2<br/>
+        position: relative;<br/>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+        #container {
+                position: relative;
+                background-color: gray;
+                width: 600px;
+                height: 50px;
+        }
+        #two {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                background-color: yellow;
+                width: 200px;
+                height: 50px;
+        }
+        </style>
+    </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="container">
+        container<br/>
+        <div id="two">
+            block #2<br/>
+            position: absolute;<br/>
+            top: 30px; left: 30px;
+        </div>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+        #container {
+                position: relative;
+                background-color: gray;
+                width: 600px;
+                height: 50px;
+        }
+        #two {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                background-color: yellow;
+                width: 200px;
+                height: 50px;
+        }
+        </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="container">
+        container<br/>
+        <div id="two">
+            block #2<br/>
+            position: absolute;<br/>
+            top: 30px; left: 30px;
+        </div>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+        #container {
+                /* position: relative; */
+                background-color: gray;
+                width: 600px;
+                height: 50px;
+        }
+        #two {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                background-color: yellow;
+                width: 200px;
+                height: 50px;
+        }
+        </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p id="one">block #1</p>
+    <div id="container">
+        container<br/>
+        <div id="two">
+            block #2<br/>
+            position: absolute;<br/>
+            top: 30px; left: 30px;
+        </div>
+    </div>
+    <p id="three">block #3</p>
+</body>
+<head>
+    <style>
+        #one {
+            background-color: cyan;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            position: relative;
+            left: 30px;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+        #three {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+        #container {
+                /* position: relative; */
+                background-color: gray;
+                width: 600px;
+                height: 50px;
+        }
+        #two {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                background-color: yellow;
+                width: 200px;
+                height: 50px;
+        }
+        </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <p>block #1</p>
+    <p id="two">
+        block #2<br/>
+        position: fixed;<br/>
+        top: 0px; right: 10px;
+    </p>
+
+    <p>block #3</p>
+    <p>block #4</p>
+    <p>block #5</p>
+    <p>block #6</p>
+    <p>block #7</p>
+    <p>block #8</p>
+    <p>block #9</p>
+    <p>block #10</p>
+    <p>block #11</p>
+</body>
+<head>
+    <style>
+        p {
+            background-color: lightgreen;
+            width: 200px;
+            height: 50px;
+        }
+        #two {
+            background-color: yellow;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+        </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <style>
+        img.a { float: left; }
+    </style>
+</head>
+
+<body>
+    <img class="a" src="신촌.jpg" width="160" height="120" />
+    <p>
+        생활이 그래를 속일지라도
+        슬퍼하거나 노여워 말라.<br>
+        우울한 날들을 견디면 믿으라.<br>
+        기쁨의 날이 오리니 마음은 미래에 사는 것 현재<br>
+        는 슬픈 것 모든 것은 순간적인 것, 지나가는<br>
+        것이니 그리고 지나가는 것은 훗날 소중하게 되리니<br>
+    </p>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <style>
+        img {
+            float: left;
+            width: 110px;
+            height: 90px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>이미지 갤러리</h3>
+    <img src="[브런치+디저트] drawing SET A.png" width="100" height="100" />
+    <img src="[브런치+디저트] drawing SET B.png" width="100" height="100" />
+    <img src="[브런치+디저트] drawing SET C.png" width="100" height="100" />
+    <img src="[디저트] dessert SET A.png" width="100" height="100" />
+    <img src="[디저트] dessert SET B.png" width="100" height="100" />
+    <img src="[디저트] dessert SET C.png" width="100" height="100" />
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <div id="box1">box #1</div>
+    <div id="box2">box #2</div>
+    <div id="box3">box #3</div>
+</body>
+<style>
+    #box1 {
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 100px; height: 100px;
+        background-color: blue;
+        z-index: 200;
+    }
+    #box2 {
+        position: absolute;
+        top: 30px; left: 30px;
+        width: 100px; height: 100px;
+        background-color: yellow;
+        z-index: 100;
+    }
+    #box3 {
+        position: absolute;
+        top: 60px; left: 60px;
+        background-color: lightgreen;
+        width: 100px; height: 100px;
+        z-index: 0;
+    }
+</style>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <style>
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+
+<body>
+    <img src="신촌.jpg" width="160" height="120" />
+    <p>img 요소의 z-index가 -1이므로 다른 요소의 뒤에 위치한다.</p>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <div id=target>
+        <p>block #1</p>
+        <p>block #2</p>
+        <p>block #3</p>
+        <p>block #4</p>
+        <p>block #5</p>
+    </div>
+</body>
+<style>
+    p {
+        background-color: lightgreen;
+        width: 200px;
+        height: 50px;
+    }
+    #target {
+        border: 1px solid black;
+        width: 300px;
+        height: 200px;
+        /*overflow: hidden;*/
+    }
+</style>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>My Blog Page</title>
+    <style>
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"> header </div>
+        <div id="nav"> nav </div>
+        <div id="content"> content </div>
+        <div id="footer"> footer </div>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>My Blog Page</title>
+    <style>
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"> header </div>
+        <div id="nav"> nav </div>
+        <div id="content"> content </div>
+        <div id="footer"> footer </div>
+    </div>
+</body>
+<head>
+    <title>My Blog Page</title>
+    <style>
+        #header {
+            background-color: yellow;
+            width: 100%;
+            height: 50px;
+        }
+
+        #nav {
+            width: 30%;
+            background-color: red;
+            height: 400px;
+            float: left;
+        }
+
+        #content {
+            width: 70%;
+            background-color: blue;
+            height: 400px;
+            float: left;
+        }
+
+        #footer {
+            background-color: aqua;
+            width: 100%;
+            height: 50px;
+            clear: both;
+        }
+    </style>
+</head>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <header>
+        <h1>My Blog Page</h1>
+    </header>
+    <nav>
+        <h1>Links</h1>
+        <ul>
+            <li><a href=http://www.3rc.org/">W3C</a></li>
+            <li><a href="http://developer.mozilla.org/">MOZILLA</a></li>
+            <li><a href="http://htmldog.com/guides/">HTML Dogs</a></li>
+        </ul>
+        <figure>
+            <img width="85" height="85" src="신촌.jpg" alt="홍길동" />
+            <figcaption>홍길동</figcaption>
+        </figure>
+    </nav>
+    <section id="main">
+        <article>
+            <h1>Semantic Tags</h1>
+            <p>
+                시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을
+                명확하게 알려주는 요소이다.
+            </p>
+        </article>
+        <article>
+            <h1>div와 span</h1>
+            <p>
+                div는 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다.
+                span 요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다. 
+            </p>
+        </article>
+    </section>
+    <footer>Copyright (c) 2023 Hong</footer>
+</body>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <header>
+        <h1>My Blog Page</h1>
+    </header>
+    <nav>
+        <h1>Links</h1>
+        <ul>
+            <li><a href=http://www.3rc.org/">W3C</a></li>
+            <li><a href="http://developer.mozilla.org/">MOZILLA</a></li>
+            <li><a href="http://htmldog.com/guides/">HTML Dogs</a></li>
+        </ul>
+        <figure>
+            <img width="85" height="85" src="신촌.jpg" alt="홍길동" />
+            <figcaption>홍길동</figcaption>
+        </figure>
+    </nav>
+    <section id="main">
+        <article>
+            <h1>Semantic Tags</h1>
+            <p>
+                시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을 명확하게 알려주는 요소이다.
+            </p>
+        </article>
+        <article>
+            <h1>div와 span</h1>
+            <p>
+                div는 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다.
+                span 요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다. 
+            </p>
+        </article>
+    </section>
+    <footer>Copyright (c) 2023 Hong</footer>
+</body>
+
+<head>
+    <title>My Blog Page</title>
+    <style>
+        body {
+            background-color: #efe5d0;
+            font-family: Arial, "Trebuchet MS", sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #e3afed;
+            color: #000000;
+            margin: 0px;
+            text-align: center;
+            padding: 5px;
+        }
+        h1 {
+            margin: 0px;
+        }
+        section#main {
+            float: right;
+            width: 70%;
+            height: 200px;
+            background-color: yellow;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 200px;
+            background-color: #ffd800;
+        }
+        footer {
+            background-color: #954b4b;
+            color: #efe5d0;
+            text-align: center;
+            padding: 10px;
+            margin: 0px 0px 0px 0px;
+            font-size: 90%;
+            clear: both;
+        }
+    </style>
+</head>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: 2s myanim;
+            animation-iteration-count: 10;
+        }
+        @keyframes myanim
+        {
+            0% { left: 0px; top: 0px; }
+            25% { left: 100px; top: 0px; }
+            50% { left: 200px; top: 0px; }
+            75% { left: 100px; top: 0px; }
+            100% { left: 0px; top: 0px; }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html> -->
+
+<!-- 예제 : CSS 애니메이션 (상대적인 속도)-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<body>
+    <div id="div1">linear speed</div>
+    <div id="div2">ease speed</div>
+    <div id="div3">ease-in speed</div>
+    <div id="div4">ease-out speed</div>
+</body>
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            color: white;
+            position: relative;
+            margin: 10px;
+            animation: myanim 5s infinite;
+        }
+        #div1 {
+            animation-timing-function: linear;
+            background-color: rgb(49, 12, 92);
+        }
+        #div2 {
+            animation-timing-function: ease;
+            background-color: rgb(43, 8, 25);
+        }
+        #div3 {
+            animation-timing-function: ease-in;
+            background-color: rgb(18, 94, 83);
+        }
+        #div4 {
+            animation-timing-function: ease-out;
+            background-color: rgb(32, 126, 52);
+        }
+        @keyframes myanim {
+            from { left: 0px; }
+            to { left: 500px; }
+        }
+    </style>
+</head>
+</html> -->
+
+<!-- 예제 : CSS 애니메이션 (튀어오르는 공 에니메이션)-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>튀어오르는 공</title>
+    <style>
+    #ball {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 50px;
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+    @keyframes bounce {
+        0%, 100% { top: 0px; }
+        50% { top: 200px; }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="ball"> </div>
+</body>
+</html> -->
+
+<!-- Lab : CSS 애니메이션 (동물들의 경주 만들기)-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>동물들의 경주</title>
+    <style>
+        #img1 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation-name: race1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #img2 {
+            position: absolute;
+            left: 0px;
+            top: 100px;
+            animation-name: race2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes race1 {
+            from { left: 0px; }
+            to { left: 100px; }
+        }
+        @keyframes race2 {
+            from { left: 0px; }
+            to { left: 500px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div><img id="img1" src="토끼.jpeg"></div>
+    <div><img id="img2" src="거북이.jpeg"></div>
+</body>
+</html> -->
+
+<!-- Lab : CSS 애니메이션 (상자 움직이기)-->
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<head>
+    <title>상자 움직이기</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            color: white;
+            position: relative;
+            margin: 10px;
+            animation: myanim 5s infinite;
+            animation-iteration-count: infinite;
+        }
+        #div1 {
+            animation-timing-function: linear;
+            background-color: red;
+        }
+        #div2 {
+            animation-timing-function: ease;
+            background-color: yellow;
+        }
+        #div3 {
+            animation-timing-function: ease-in;
+            background-color: blue;
+        }
+        #div4 {
+            animation-timing-function: ease-out;
+            background-color: green;
+        }
+
+        @keyframes myanim {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; top: 125px; top: 0px;}
+            50% {background-color: blue; left: 250px; top: 0px;}
+            75% {background-color: green; top: 375px; top: 0px;}
+            100% {background-color: red; left: 500px; top: 0px;}
+        }
+    </style>
+</head>

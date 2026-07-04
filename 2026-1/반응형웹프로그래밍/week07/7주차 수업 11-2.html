@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>7주차 수업</title>
+    </head>
+    <style>
+        p {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            background: yellow;
+            transition: width 5s, height 5s, border 5s, trnasform 5s;
+            -webkit-transition: width 5s, height 5s, border 5s, -webkit-transform 5s;
+        }
+        p:hover {
+            width: 200px;
+            height: 100px;
+            border: 10px solid red;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+        }
+        div {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            background: yellow;
+            transition: width 5s;
+        }
+        div:hover {
+            width: 200px;
+        }
+    </style>
+    <head>
+        <body>
+            <div>마우스를 올려보세요</div>
+        </body>
+    </head>
+    </html>
